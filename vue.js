@@ -22,7 +22,9 @@ new Vue({
             this.shortLink = response.data["id"];            
           
         }).catch((error) => {
-          alert(error)  }) 
+          this.shortLink=null;
+          alert(error)  
+        }) 
     }
   }
 
