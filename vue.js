@@ -9,7 +9,7 @@ new Vue({
   },
   methods:{
     shorten() {
-      if (this.longLink == null || this.longLink == undefined) {
+      if (this.longLink == null || this.longLink == undefined || this.longLink == "") {
         return;
       }     
       const article = { long_url: this.longLink };
